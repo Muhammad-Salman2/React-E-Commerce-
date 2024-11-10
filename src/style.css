@@ -2,16 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
     font-size: 16px;
 }
-.main{
+
+.main {
     border: 1px solid black;
-   height: auto;
-   width: 100%;
+    height: auto;
+    width: 100%;
 }
 
-.banner{
+.banner {
     background-color: black;
     color: white;
     font-size: 15px;
@@ -20,114 +21,119 @@ body{
     align-items: center;
     justify-content: center;
 }
-#shopnow{
+
+#shopnow {
     text-decoration: underline;
 }
-#shopnow:hover{
+
+#shopnow:hover {
     cursor: pointer;
 }
-select{
+
+select {
     background-color: black;
     color: white;
     outline: none;
-    
 }
 
 /* banner work done */
-.navbar-main{
+.navbar-main {
     height: 100px;
     display: flex;
     justify-content: center;
-   border-bottom: 1px solid gray;
-    
+    border-bottom: 1px solid gray;
 }
-.navbar{
+
+.navbar {
     display: flex;
     width: 12in;
     justify-content: space-between;
     border: 1px solid red;
     height: 38px;
     margin-top: 40px;
+}
 
-}
-span{
+span {
     border: 1px solid black;
-   
 }
-.Exclusive>h1{
+
+.Exclusive>h1 {
     font-weight: bold;
     font-size: 17px;
 }
-.Exclusive{
+
+.Exclusive {
     width: fit-content;
     display: flex;
     align-items: center;
     margin-left: 40px;
 }
-.Home{
+
+.Home {
     width: 367px;
-     /* display: flex; */
-     align-items: center; 
-    /* justify-content: space-between;  */
+    /* display: flex; */
+    align-items: center;
 }
-.Home>ul{
+
+.Home>ul {
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
     padding-top: 7px;
-    /* padding-left: 20px; */
     cursor: pointer;
 }
-.Home>ul>li:hover{
+
+.Home>ul>li:hover {
     text-decoration: underline blueviolet;
 }
 
-.icons{
-display: flex;
-align-items: center;
-justify-content: space-between;
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-width: 130px;
-
+    width: 130px;
 }
-.search{
+
+.search {
     width: 250px;
     display: flex;
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
     align-items: center;
-    
 }
-.search-icon{
+
+.search-icon {
     font-size: 25px;
 }
-.search>input{
-    background-color: #F5F5F5;
+
+.search>input {
+    background-color: #f5f5f5;
     width: 200px;
     border: none;
     padding-left: 10px;
-    
 }
 
-.search-or-icon{
+.search-or-icon {
     border: 1px solid black;
     display: flex;
     width: 385px;
-
 }
 
-.heart{
+.heart {
     font-size: 20px;
 }
-.cart{
+
+.cart {
     font-size: 20px;
 }
-.account{
+
+.account {
     font-size: 20px;
 }
 
 /* navbar completed */
 
-.hero-list{
+.hero-list {
     border: 1px solid gray;
     width: 197px;
     height: 344px;
@@ -136,9 +142,9 @@ width: 130px;
     flex-direction: column;
     margin-top: 38px;
     /* gap: 16px; */
-
 }
-.hero-list>ul>li{
+
+.hero-list>ul>li {
     border: 1px solid black;
     margin-top: 12.5px;
     background-color: lightgrey;
@@ -146,23 +152,87 @@ width: 130px;
     align-items: center;
     justify-content: space-between;
 }
-.center-line{
+
+.center-line {
     border-left: 1px solid black;
     height: 384px;
     width: fit-content;
     margin-left: 10px;
 }
-.li-hero-main{
+
+.li-hero-main {
     border-left: 1px slid black;
     display: flex;
 }
 
-
-.slider{
-    width: 892px ;
+.slider {
+    width: 892px;
     height: 344px;
     background-color: black;
     margin-top: 38px;
     margin-left: 30px;
     display: flex;
+    align-items: center;
+}
+
+.slider-left {
+    border: 1px solid white;
+    width: 400px;
+    height: 320px;
+    margin-left: 20px;
+    /* margin-top: 20px; */
+}
+
+.iphone-logo {
+    /* border: 1px solid white; */
+    color: white;
+    margin-left: 20px;
+    
+   
+}
+
+.iphone-logo>p{
+    border: 1px solid white;
+    width: 230px;
+    height: 50px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.discount-para>h1 {
+    font-size: 48px;
+    color: white;
+    border: 1px solid white;
+    font-weight: 500;
+    width: 284px;
+    height: 130px;
+ 
+    margin-left: 40px;
+}
+
+.shop-now {
+    color: white;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    border: 1px solid white;
+    width: fit-content;
+    height: 50px;
+    width: 140px;
+    margin-left: 40px;
+    
+    
+}
+.shop-now>p{
+    display: flex;
+    text-decoration: underline;
+    
+}
+.arrow{
+    margin-top: 7px;
+    margin-left: 10px;
+}
+.slider-right{
+
 }
