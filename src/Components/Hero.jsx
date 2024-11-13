@@ -9,12 +9,8 @@ export default function Hero() {
       <div className="li-hero-main">
         <div className="hero-list">
           <ul>
-            <li>
-              Woman’s Fashion <FaAngleRight />
-            </li>
-            <li>
-              Men’s Fashion <FaAngleRight />
-            </li>
+            <li>Woman’s Fashion <FaAngleRight /></li>
+            <li>Men’s Fashion <FaAngleRight /></li>
             <li>Electronics</li>
             <li>Home & Lifestyle</li>
             <li>Medicine</li>
