@@ -10,17 +10,17 @@ import { GoArrowLeft } from "react-icons/go";
 export default function Catogary() {
     return (
         <>
-            <div className="flashsale-box ">
-                <div className="todays-Div">
-                    <div className="rebbox"></div>
-                    <p >This Month</p>
+            <div className="catogary-box ">
+                <div className="catogary-Div">
+                    <div className="catogary-rebbox"></div>
+                    <p >Categories</p>
                 </div>
-                <div className="flashsale-heading">
+                <div className="catogary-heading">
                     <p>Browse By Category</p>
-                </div>
-                <div className="arrows">
-                            <span><GoArrowLeft /></span>
-                            <span><GoArrowRight /></span>
+                    <div className="catogary-arrows">
+                                <span><GoArrowLeft /></span>
+                                <span><GoArrowRight /></span>
+                    </div>
                 </div>
             </div>
         </>

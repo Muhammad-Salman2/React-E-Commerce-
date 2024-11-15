@@ -724,20 +724,20 @@ select {
   height: 125px;
   display: flex;
   justify-content: center;
-  /* border-bottom: 1px solid gray; */
+  border-bottom: 1px solid gray;
 }
 
 .navbar {
   display: flex;
-  width: 13in;
+  width: 1200px;
   justify-content: space-between;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   height: 38px;
   margin-top: 50px;
 }
 
 span {
-  /* border: 1px solid black; */
+  border: 1px solid black;
 }
 
 .Exclusive > h1 {
@@ -749,7 +749,7 @@ span {
   width: fit-content;
   display: flex;
   align-items: center;
-  margin-left: 40px;
+  /* margin-left: 40px; */
 }
 
 .Home {
@@ -797,7 +797,7 @@ span {
 }
 
 .search-or-icon {
-  /* border: 1px solid black; */
+  border: 1px solid black;
   display: flex;
   width: 385px;
 }
@@ -817,10 +817,10 @@ span {
 /* navbar completed */
 
 .hero-list {
-  /* border: 1px solid gray; */
+  border: 1px solid gray;
   width: 197px;
-  height: 344px;
-  margin-left: 125px;
+  height: 350px;
+  margin-left: 100px;
   display: flex;
   flex-direction: column;
   margin-top: 38px;
@@ -828,52 +828,51 @@ span {
 }
 
 .hero-list > ul > li {
-  /* border: 1px solid black; */
+  border: 1px solid black;
   margin-top: 12.5px;
-  /* background-color: lightgrey; */
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .center-line {
-  /* border-left: 1px solid black; */
+  border-left: 1px solid black;
   height: 384px;
   width: fit-content;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 .li-hero-main {
-  /* border-left: 1px slid black; */
+  border-left: 1px slid black;
   display: flex;
 }
 
 .slider {
-  width: 892px;
+  width: 944px;
   height: 344px;
   background-color: black;
   margin-top: 38px;
-  margin-left: 70px;
+  margin-left: 40px;
   display: flex;
   align-items: center;
 }
 
 .slider-left {
-  /* border: 1px solid white; */
+  border: 1px solid white;
   width: 400px;
   height: 320px;
-  margin-left: 20px;
+  margin-left: 10px;
   /* margin-top: 20px; */
 }
 
 .iphone-logo {
-  /* border: 1px solid white; */
+  border: 1px solid white;
   color: white;
   margin-left: 20px;
 }
 
 .iphone-logo > p {
-  /* border: 1px solid white; */
+  border: 1px solid white;
   width: 230px;
   height: 50px;
   margin-left: 40px;
@@ -884,7 +883,7 @@ span {
 .discount-para > h1 {
   font-size: 48px;
   color: white;
-  /* border: 1px solid white; */
+  border: 1px solid white;
   font-weight: 500;
   width: 284px;
   height: 130px;
@@ -897,7 +896,7 @@ span {
   display: flex;
   align-items: center;
   /* justify-content: center; */
-  /* border: 1px solid white; */
+  border: 1px solid white;
   width: fit-content;
   height: 50px;
   width: 140px;
@@ -911,8 +910,7 @@ span {
   margin-top: 7px;
   margin-left: 10px;
 }
-.slider-right {
-}
+
 
 /* flashsale box coding started */
 
@@ -923,7 +921,7 @@ span {
   margin-top: 80px;
 }
 .todays-Div {
-  /* border: 1px solid black; */
+  border: 1px solid black;
   width: 100px;
   height: 50px;
   display: flex;
@@ -933,7 +931,7 @@ span {
 .rebbox {
   width: 30px;
   height: 50px;
-  /* border: 1px solid black; */
+  border: 1px solid black;
   border-radius: 3px;
   background-color: #db4444;
 }
@@ -943,13 +941,14 @@ span {
   margin-left: 10px;
 }
 .flashsale-heading {
-  /* border: 1px solid black; */
+  border: 1px solid black;
   width: 1200px;
   height: 60px;
-  margin-left: 125px;
+  margin-left: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 20px;
 }
 .flashsale-heading > p {
   font-size: 32px;
@@ -962,10 +961,11 @@ span {
   /* justify-content: space-between; */
 }
 .timing > span {
-  /* border: 1px solid black; */
+  border: 1px solid black;
   width: 70px;
   height: 60px;
   align-items: center;
+  margin-top: -25px;
   /* justify-content: center; */
 }
 .timing > span > p {
@@ -984,16 +984,18 @@ span {
 .semicolen {
   color: #db4444;
   font-size: 40px;
+  margin-bottom: 20px;
 }
 
 .arrows {
-  /* border: 1px solid black; */
+  border: 1px solid black;
   width: 90px;
   height: 50px;
   margin-left: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* margin-top: -25px; */
 }
 .arrows > span {
   width: 40px;
@@ -1010,7 +1012,7 @@ span {
   width: 1200px;
   height: 370px;
   border: 1px solid black;
-  margin-left: 125px;
+  margin-left: 100px;
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
@@ -1035,18 +1037,32 @@ span {
 }
 
 .item-description{
-  width: 200px;
+  width: 210px;
   height: 100px;
   border: 1px solid black;
   margin-top: 10px;
 }
+.first-price{
+  color: #db4444;
+}
 
+.secind-price>s{
+ color: #94999d;
+ 
+}
+.havit>p{
+  border: 1px solid black;
+  margin-top: -17px;
+}
+.soldout-items>p{
+  color: #94999d;
+}
 .item-price{
   display: flex;
-  width: 80px;
+  width: 90px;
   border: 1px solid black;
   justify-content: space-between;
-  margin-top: 10px;
+  margin-top: -15px;
 }
 
 .icon-div{
@@ -1054,13 +1070,15 @@ span {
   width: 150px;
   border: 1px solid black;
   justify-content: space-between;
-  margin-top: 10px;
+  align-items: center;
+  margin-top: 8px;
 }
 .star-icon{
-  width: 20px;
+  width: 15px;
+  height: 15px;
 }
 
-/* .discount-Div{
+.discount-Div{
   background-color:#DB4444 ;
   width: 50px;
   height: 20px;
@@ -1072,13 +1090,13 @@ span {
   justify-content: center;
   position:absolute;
   margin-bottom: 90px;
-} */
+}
 
 .View-all-products{
   width: 1200px;
   height: 120px;
-  border-bottom: 2px solid #f5f5f5;
-  margin-left: 125px;
+  border-bottom: 1px solid #94999d;
+  margin-left: 100px;
   margin-top: 20px;
   display: flex;
   align-items: center;
@@ -1093,5 +1111,302 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+.catogary-box {
+  border: 1px solid black;
+  width: 100%;
+  height: auto;
+  margin-top: 80px;
+}
+
+.catogary-heading{
+  border: 1px solid black;
+  width: 1200px;
+  height: 60px;
+  margin-left: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.catogary-Div>p{
+  color: #db4444;
+  font-weight: bold;
+  /* margin-left: 20px; */
+  margin-left: 10px;
+}
+
+.catogary-heading > p {
+  font-size: 32px;
+  font-weight: 500;
+  /* padding-left: 10px; */
+}
+
+.catogary-arrows {
+  border: 1px solid black;
+  width: 90px;
+  height: 50px;
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin-top: -25px; */
+}
+.catogary-arrows > span {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #f5f5f5;
+  font-size: 25px;
+  padding-top: 8px;
+  padding-left: 8px;
+}
+.catogary-Div{
+  color: #db4444;
+  font-weight: bold;
+  margin-left: 10px;
+  border: 1px solid black;
+  width: 170px;
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.catogary-rebbox{
+  width: 30px;
+  height: 50px;
+  /* border: 1px solid black; */
+  border-radius: 3px;
+  background-color: #db4444;
+  
+}
+
+/* catogrycard code start */
+
+.Catogarycard{
+  width: 1200px;
+  height: 260px;
+  border-bottom: 1px solid #94999d;
+  margin-left: 100px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Catogarycard>div{
+  width: 170px;
+  height: 170px;
+  border-radius: 4px;
+  border: 1px solid #94999d;
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  
+  
+  
+}
+.Catogarycard>div>p{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-top: 15px;
+ font-size: 18px;
+
+}
+
+.icons{
+ font-size: 65px;
+ margin-left: 20px;
+ margin-top: 45px;
+ font-weight:lighter;
+}
+
+
+/* best seling procduct code start */
+
+.bestproduct-box  {
+  border: 1px solid black;
+  width: 100%;
+  height: auto;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.bestproduct-heading{
+  border: 1px solid black;
+  width: 1200px;
+  height: 60px;
+  margin-left: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.bestproduct-heading > p {
+  font-size: 32px;
+  font-weight: 500;
+  /* padding-left: 10px; */
+}
+.bestproduct-Div>p{
+  color: #db4444;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.bestproduct-rebbox{
+  width: 30px;
+  height: 50px;
+  /* border: 1px solid black; */
+  border-radius: 3px;
+  background-color: #db4444;
+  
+}
+.bestproduct-Div{
+  color: #db4444;
+  font-weight: bold;
+  margin-left: 10px;
+  border: 1px solid black;
+  width: 170px;
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.bestproduct-button>button{
+ width: 159px;
+ height: 50px;
+ background-color: #DB4444;
+ color: #f5f5f5;
+ border-radius: 4px;
+}
+
+/* bestproduct card code stared */
+
+.bestproduct-card{
+  border: 1px solid black;
+}
+
+.bestselingcard-main {
+  width: 1200px;
+  height: 370px;
+  border: 1px solid black;
+  margin-left: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+
+/* Enhance music div code started */
+
+.Enhancemusic-main{
+  width: 1200px;
+  height: 500px;
+  border: 1px solid white;
+  margin-left: 100px;
+  margin-top: 90px;
+  background-color: #000000;
+}
+.flexbox{
+  width: 1050px;
+  height: 450px;
+  border: 1px solid white;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  margin-left: 70px;
+  margin-right: 70px;
+  display: flex;
+}
+
+.content1{
+  border: 1px solid white;
+  width: 90px;
+  height: 30px;
+}
+.content1>p{
+  color: #00FF66;
+}
+
+.content2{
+  width: 443px;
+  height: 140px;
+  border: 1px solid white;
+  margin-top: 30px;
+  color:#FAFAFA;
+}
+.content2>p{
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 500;
+}
+
+.content3{
+ width: 320px;
+ height: 86px;
+ border: 1px solid white;
+ margin-top: 20px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.content3>div{
+     height: 62px;
+     width: 62px;
+     background-color: #FAFAFA;
+     border-radius:30px;
+     display: inline;
+     align-items: center;
+}
+
+
+
+.thisday{
+font-size: 11px;
+display: flex;
+justify-content: center;
+}
+
+.Day{
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+  font-weight:600;
+  
+}
+
+/* buy now button */
+.buynow{
+  width: 171px;
+  height: 56px;
+  margin-top: 40px;
+  border-radius: 4px;
+  background-color: #00FF66;
+  color: #FAFAFA;
+}
+
+.speaker{
+  border: 1px solid white;
+  height: 380px;
+  width: 600px;
+  margin-left: 60px;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+.exploreproduct-main{
+  width: 1200px;
+  height: 600px;
+  border: 1px solid black;
+  margin-left: 100px;
+  display: flex;
+  justify-content: space-between;
+  
 }
 
