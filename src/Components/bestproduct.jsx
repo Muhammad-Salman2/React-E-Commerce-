@@ -15,11 +15,11 @@ export default function Bestproduct() {
                     <p >This Month</p>
                 </div>
                 <div className="bestproduct-heading">
-                    <p>Browse By Category</p>
+                    <p>Best Selling Products</p>
+                </div>
                     <div className="bestproduct-button">
                                 <button>View All</button>
                     </div>
-                </div>
             </div>
 
 

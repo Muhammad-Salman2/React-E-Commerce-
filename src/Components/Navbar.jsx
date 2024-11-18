@@ -3,6 +3,8 @@ import { IoCartOutline } from "react-icons/io5";
 import { RiAccountCircleLine } from "react-icons/ri";
 import { IoIosSearch } from "react-icons/io";
 
+
+
 export default function Navbar() {
   return (
     <>

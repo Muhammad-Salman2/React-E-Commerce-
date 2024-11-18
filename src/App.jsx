@@ -9,13 +9,42 @@ import Catogarycard from "./Components/Catogrycard.jsx";
 import Bestproduct from "./Components/bestproduct.jsx";
 import Bestproductcard from "./Components/bestproductcard.jsx";
 import Enhancemusic from "./Components/EnhanceMusic.jsx";
-import Exploreourproduct from "./Components/ExploreOurProduct.jsx";
+import Exploreproduct from "./Components/exploreproduct.jsx";
+import Explorproductcard from "./Components/ExploreProductcard.jsx";
+import Newarrival from "./Components/NewArrival.jsx";
+import Newarrivalproduct from "./Components/NewarrivalProduct.jsx";
+
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import About from "./pages/Aboutus.jsx";
+import Home from "./pages/Home.jsx";
+import Contact from "./pages/Contact.jsx";
+import Survicesicon from "./Components/SurviceIcon.jsx";
 
 function App() {
+  // const router = createBrowserRouter([
+  //   {
+  //     path:"/",
+  //     element:<Home/>
+  //   },
+  //   {
+  //     path:"/about",
+  //     element:<About/>
+  //   },
+  //   {
+  //     path:"/contact",
+  //     element:<Contact/>
+  //   },
+  //   {
+  //     path:"/detail",
+  //     element:<Details/>
+  //   }
+  // ])
   return (
     <>
-      <div className="main">
+
+    
         <Firstpage />
+      <div className="main">
         <Navbar />
         <Hero />
         <Flashsale />
@@ -28,30 +57,44 @@ function App() {
         <div className="View-all-products">
           <button>View All Products</button>
         </div>
-      </div>
 
-      <Catogary />
-      <Catogarycard />
-      <Bestproduct />
+          <Catogary />
+          <Catogarycard />
+          <Bestproduct />
 
-      <div className="bestselingcard-main">
-        <Bestproductcard />
-        <Bestproductcard />
-        <Bestproductcard />
-        <Bestproductcard />
-      </div>
+          <div className="bestselingcard-main">
+            <Bestproductcard />
+            <Bestproductcard />
+            <Bestproductcard />
+            <Bestproductcard />
+          </div>
 
-      <Enhancemusic />
+          <Enhancemusic />
+          <Exploreproduct/>
 
-      <div className="exploreproduct-main">
-        <Exploreourproduct />
-        <Exploreourproduct />
-        <Exploreourproduct />
-        <Exploreourproduct />
-        <br />
-        <Exploreourproduct />
-        <Exploreourproduct />
-      </div>
+
+          <div className="exploreproductcard-main">
+           
+
+              <Explorproductcard />
+              <Explorproductcard />
+              <Explorproductcard />
+              <Explorproductcard />
+            
+              <Explorproductcard />
+              <Explorproductcard />
+              <Explorproductcard />
+              <Explorproductcard />
+            
+              <div className="exploreproduct-button">
+                    <button>View All</button>
+              </div>
+          </div>
+
+          <Newarrival/>
+          <Newarrivalproduct/>
+          <Survicesicon/>
+        </div>
     </>
   );
 }

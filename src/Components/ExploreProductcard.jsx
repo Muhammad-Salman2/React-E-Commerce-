@@ -4,10 +4,10 @@ import star from "../assets/images/star.png"
 
 
 
-export default function Explorproduct(){
+export default function Explorproductcard(){
     return(
         <>
-        <div className="exploreproduct-card">
+        <div className="exploreproductcard-card">
             <div className="images-div"><img src={Jacket} alt="Jacket"  /></div>
             <div className="item-description">
                 <span className="havit"><p>HAVIT HV-G92 Gamepad</p></span>
@@ -21,8 +21,8 @@ export default function Explorproduct(){
                 </span>
                 
             </div>
-            
         </div>
+           
         
         </>
     )
