@@ -1,7 +1,105 @@
+// import Navbar from "./Components/Navbar.jsx";
+// import Footer from "./Components/Footer.jsx";
+import Card from "../Components/Flashsalecards.jsx";
+
+
 export default function Home(){
     return(
         <>
-        <p>this is my home page</p>
+        <div>
+        
+        <Card/>
+        <Card/>
+        <Card/>
+        </div>
         </>
     )
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

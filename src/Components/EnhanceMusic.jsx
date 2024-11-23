@@ -1,4 +1,4 @@
-import speaker from "../assets/images/speaker.png"
+import speaker2 from "../assets/images/new.png"
 
 
 
@@ -20,7 +20,7 @@ export default function Enhancemusic() {
             <button className="buynow">Buy Now!</button>
           </div>
              <div className="speaker">
-                <img src={speaker} alt="speaker-Image"  />
+                <img src={speaker2} alt="speaker-Image"  />
              </div>
         </div>
       </div>

@@ -7,27 +7,36 @@ export default function Survicesicon() {
     <>
       <div className="survicesicon-main">
         <div>
-          <TbTruckDelivery className="survice-icons"/>
-          <div>
-            <p>FREE AND FAST DELIVERY</p>
-            <p>Free delivery for all orders over $140</p>
+            <div className="icon_div">
+                <TbTruckDelivery className="survice-icons"/>
+            </div>
+          <div className="paragraph-div">
+            <p className="first-para">FREE AND FAST DELIVERY</p>
+            <p className="second-para">Free delivery for all orders over $140</p>
           </div>
         </div>
         <div>
-          <RiCustomerServiceLine className="survice-icons"/>
-          <div>
-            <p>24/7 CUSTOMER SERVICE</p>
-            <p>Friendly 24/7 customer support</p>
+            <div className="icon_div">
+                <RiCustomerServiceLine className="survice-icons"/>
+            </div>
+          <div className="paragraph-div">
+            <p className="first-para">24/7 CUSTOMER SERVICE</p>
+            <p className="second-para">Friendly 24/7 customer support</p>
           </div>
         </div>
         <div>
-          <AiOutlineSafetyCertificate className="survice-icons"/>
-          <div>
-            <p>MONEY BACK GUARANTEE</p>
-            <p>We reurn money within 30 days</p>
+            <div className="icon_div">
+                <AiOutlineSafetyCertificate className="survice-icons"/>
+            </div>
+          <div className="paragraph-div">
+            <p className="first-para">MONEY BACK GUARANTEE</p>
+            <p className="second-para">We reurn money within 30 days</p>
           </div>
         </div>
       </div>
+
+      <div></div>
+      
     </>
   );
 }

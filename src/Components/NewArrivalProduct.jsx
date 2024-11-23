@@ -9,11 +9,11 @@ export default function Newarrivalproduct() {
       <div className="arrivalproduct-main">
         <div className="playstation">
           <img src={playstation} alt="playstation" />
-          {/* <div className="arrivalproduct-discription">
+          <div className="arrivalproduct-discription">
             <p>PlayStation 5</p>
             <p>Black and White version of the PS5 coming out on sale.</p>
             <p><a href="">Shop Now</a></p>
-          </div> */}
+          </div>
         </div>
         <div className="second-div">
             <div className="girl-img">

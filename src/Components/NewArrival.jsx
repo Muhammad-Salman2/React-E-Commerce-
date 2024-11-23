@@ -16,7 +16,7 @@ export default function Newarrival() {
                     <p >Categories</p>
                 </div>
                 <div className="newarrival-heading">
-                    <p>Browse By Category</p>
+                    <p>New Arrival</p>
                     <div className="newarrival-arrows">
                                 <span><GoArrowLeft /></span>
                                 <span><GoArrowRight /></span>

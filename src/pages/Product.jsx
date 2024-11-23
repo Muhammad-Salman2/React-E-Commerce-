@@ -1,14 +1,12 @@
-import Jacket from "../assets/images/jacket.png"
-import star from "../assets/images/star.png"
+// import Card from "../Components/FlashsaleCards.jsx";
 
 
 
-
-export default function Explorproductcard(Props){
-    return(
-        <>
-        <div className="exploreproductcard-card">
-            <div className="images-div"><img src={Props.productimg} alt="Jacket"  /></div>
+export default function Product() {
+  return (
+    <>
+     <div className="card">
+            <div className="images-div"><img src={Props.productimg} alt="Controller"  /></div>
             <div className="item-description">
                 <span className="havit"><p>{Props.item_name}</p></span>
                 <span className="item-price"><p className="first-price">{Props.price}</p> <p className="secind-price"><s>{Props.cutprice}</s></p></span>
@@ -21,9 +19,8 @@ export default function Explorproductcard(Props){
                 </span>
                 
             </div>
+            
         </div>
-           
-        
-        </>
-    )
+    </>
+  );
 }
