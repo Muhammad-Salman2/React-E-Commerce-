@@ -2,7 +2,6 @@ import { FaRegHeart } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";
 import { RiAccountCircleLine } from "react-icons/ri";
 import { IoIosSearch } from "react-icons/io";
-import { Link } from "react-router-dom";
 
 
 
@@ -16,11 +15,10 @@ export default function Navbar() {
           </span>
           <span className="Home">
             <ul>
-              {Link.map((item,i)=>(
-                <li>
-                  <Link to ={item.Link}>{item.title}</Link>
-                </li>
-              ))}
+            <li><Link to ={item.Link}></Link></li>
+            <li><Link to ={item.Link}></Link></li>
+            <li><Link to ={item.Link}></Link></li>
+            <li><Link to ={item.Link}></Link></li>
             </ul>
           </span>
 
