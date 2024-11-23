@@ -15,10 +15,10 @@ export default function Navbar() {
           </span>
           <span className="Home">
             <ul>
-            <li><Link to ={item.Link}></Link></li>
-            <li><Link to ={item.Link}></Link></li>
-            <li><Link to ={item.Link}></Link></li>
-            <li><Link to ={item.Link}></Link></li>
+              <li><Link to ={item.Link}></Link></li>
+              <li><Link to ={item.Link}></Link></li>
+              <li><Link to ={item.Link}></Link></li>
+              <li><Link to ={item.Link}></Link></li>
             </ul>
           </span>
 
