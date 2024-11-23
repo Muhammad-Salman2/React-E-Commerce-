@@ -40,6 +40,7 @@ import Footer from "./Components/Footer.jsx";
 import { Routes, Route, Outlet, Link } from "react-router-dom";
 
 import Survicesicon from "./Components/SurviceIcon.jsx";
+import Signup from "./pages/Signup.jsx";
 
 function App() {
  
@@ -49,8 +50,8 @@ function App() {
 
         <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<Aboutus />} />
-            <Route path="/" element={<Home />} />
+            <Route path="/signup" element={<Signup />} />
+           
         </Routes>
 
 
