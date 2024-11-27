@@ -5,7 +5,7 @@ import speaker2 from "../assets/images/new.png"
 export default function Enhancemusic() {
   return (
     <>
-      <div className="Enhancemusic-main">
+      <div className="Enhancemusic-main mx-[92px]">
         <div className="flexbox">
           <div className="content">
             <div className="content1"><p>Categories</p></div>

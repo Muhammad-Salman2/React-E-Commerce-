@@ -16,7 +16,7 @@ export default function Footer(){
                     <p>Exclusive</p>
                     <li>Subscribe</li>
                     <li>Get 10% off your first order</li>
-                    <li className="input-li"><input type="email" placeholder="Enter your email"/></li>
+                    <li ><input type="email" placeholder="Enter your email" className="input-li"/></li>
                 </div>
                 <div className="page-description2">
                     <p>Support</p>
@@ -59,7 +59,10 @@ export default function Footer(){
 
                 </div>
             </div>
+            <div className="copyright-box">
             <p className="copyright">Copyright Rimel 2022. All right reserved</p>
+            </div>
+            
         </div>
         </>
     )

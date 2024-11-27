@@ -17,9 +17,10 @@ export default function Navbar() {
           <span className="Home">
             <ul>
               <li><Link to ={"/"}>Home</Link></li>
-              <li><Link to ={"/contactus"}>Contact</Link></li>
-              <li><Link to ={"/signup"}>signup</Link></li>
               <li><Link to ={"/about"}>About</Link> </li>
+              <li><Link to ={"/signup"}>Signup</Link></li>
+              <li><Link to ={"/contactus"}>Contact Us</Link></li>
+              <li><Link to ={"/product"}>Product</Link></li>
             </ul>
           </span>
 

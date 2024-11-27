@@ -1,26 +1,43 @@
-// import Card from "../Components/FlashsaleCards.jsx";
+import { CiHeart } from "react-icons/ci";
+import eyesimg from "../assets/images/Group.png";
+import star from "../assets/images/star.png";
 
+import axios from "axios";
+import { useEffect, useState } from "react";
+import Card from "../Components/Cards";
 
+export default function Products(Props) {
+  const API_KEY = "https://dummyjson.com/products";
 
-export default function Product() {
+  const [products, setProducts] = useState(null);
+
+  const getProductData = async () => {
+    const response = await axios(API_KEY);
+    console.log(response.data.products);
+
+    const products = response?.data?.products;
+
+    setProducts(products);
+  };
+  useEffect(() => {
+    getProductData();
+  }, []);
+
   return (
     <>
-     <div className="card">
-            <div className="images-div"><img src={Props.productimg} alt="Controller"  /></div>
-            <div className="item-description">
-                <span className="havit"><p>{Props.item_name}</p></span>
-                <span className="item-price"><p className="first-price">{Props.price}</p> <p className="secind-price"><s>{Props.cutprice}</s></p></span>
-                <span className="icon-div">
-                    <img src={star} alt="star"  className="star-icon"/>
-                    <img src={star} alt="star"  className="star-icon"/>
-                    <img src={star} alt="star"  className="star-icon"/>
-                    <img src={star} alt="star"  className="star-icon"/>
-                    <span className="soldout-items"><p>{Props.soldout}</p></span>
-                </span>
-                
-            </div>
-            
-        </div>
+      {products === null ?  "Loding... Please wait " : null}
+
+
+        <input type="Search"  placeholder="Search item"className="input" onChange={(event)=>{
+          console.log(event.target.value)
+        }}/>
+
+        
+      <div className="prduduct-flexbox">
+        {products?.map((item) => (
+          <Card key={item.id} productimg={item.thumbnail} item_name = {item.title}  price = {item.price}  />
+        ))}
+      </div>
     </>
   );
 }
