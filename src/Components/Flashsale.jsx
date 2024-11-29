@@ -38,12 +38,12 @@ export default function Flashsale() {
                 </div>
 
 
-                <div className="card-main">
-          <Card productimg = {controller} discount = "-40%" item_name = "HAVIT HV-G92 Gamepad" price = "$960" cutprice = "$160" soldout = "(75)"/>
-          <Card productimg = {Keyboard} discount = "-35%"  item_name = "AK-900 Wired Keyboard" price = "$370" cutprice = "$1160" soldout = "(99)"/>
-          <Card productimg = {screen} discount = "-35%"  item_name = "IPS LCD Gaming Monitor" price = "$375" cutprice = "$400" soldout = "(99)"/>
-          <Card productimg = {chear} discount = "-25%"  item_name = "S-Series Comfort Chair " price = "$375" cutprice = "$400" soldout = "(88)"/>
-        </div>
+                <div className="card-main1">
+                    <Card productimg = {controller} discount = "-40%" item_name = "HAVIT HV-G92 Gamepad" price = "$960" cutprice = "$160" soldout = "(75)"/>
+                    <Card productimg = {Keyboard} discount = "-35%"  item_name = "AK-900 Wired Keyboard" price = "$370" cutprice = "$1160" soldout = "(99)"/>
+                    <Card productimg = {screen} discount = "-35%"  item_name = "IPS LCD Gaming Monitor" price = "$375" cutprice = "$400" soldout = "(99)"/>
+                    <Card productimg = {chear} discount = "-25%"  item_name = "S-Series Comfort Chair " price = "$375" cutprice = "$400" soldout = "(88)"/>
+                 </div>
         <div className="View-all-products">
           <button>View-all-products</button>
           

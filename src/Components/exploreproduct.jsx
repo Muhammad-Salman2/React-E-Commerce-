@@ -32,7 +32,7 @@ export default function Exploreproduct() {
         </div>
       </div>
 
-      <div className="card-main flex-wrap mx-[92px]">
+      <div className="card-main  ">
         <Card
           productimg={dog}
           discount="-40%"

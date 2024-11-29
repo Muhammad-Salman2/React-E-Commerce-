@@ -25,17 +25,17 @@ export default function Navbar() {
           </span>
 
           <div className="search-or-icon">
-          <div className="search">
-            <input type="search" placeholder="What are you looking for?" />
-            <IoIosSearch className="search-icon" />
-          </div>
+            <div className="search">
+              <input type="search" placeholder="What are you looking for?" />
+              <IoIosSearch className="search-icon" />
+            </div>
 
-            <div className="icons">
+            {/* <div className="icons"> */}
               <FaRegHeart className="heart" />
               <IoCartOutline className="cart" />
               <RiAccountCircleLine className="account" />
 
-            </div>
+            {/* </div> */}
           </div>
         </div>
       </div>

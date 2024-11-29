@@ -23,13 +23,25 @@ export default function Products(Props) {
     getProductData();
   }, []);
 
+      const  [searchTerm, setSearchTerm] = useState("");
+        console.log(searchTerm);
+
+        const searchProduct = ()=>{
+          const result = products?.filter((item)=>{
+            return item.title === searchTerm;
+          })
+        }
+        // item.title.toLowerCase().includes(searchTerm);
+        const searchResult =  searchProduct()
   return (
     <>
       {products === null ?  "Loding... Please wait " : null}
 
 
         <input type="Search"  placeholder="Search item"className="input" onChange={(event)=>{
-          console.log(event.target.value)
+          // console.log(event.target.value)
+          setSearchTerm(event.target.value?.toLowerCase())
+
         }}/>
 
         

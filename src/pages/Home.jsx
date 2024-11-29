@@ -10,7 +10,7 @@ import Survicesicon from "../Components/SurviceIcon.jsx";
 export default function Home() {
   return (
     <>
-      <div>
+      <div className="home">
         <Hero />
         <Flashsale />
         <Catogary />
