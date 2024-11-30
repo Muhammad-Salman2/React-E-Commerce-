@@ -12,7 +12,7 @@ export default function Card(Props){
         <div className="card">
             <div className="images-div"><img src={Props.productimg} alt="Controller"  />
 
-            <div className="discount">{Props.discount}</div>
+            {Props.discount ? <div className="discount">{Props.discount}</div> :null}
                 <div className="liked">
                     <button><CiHeart /></button>
                     <button><img src={eyesimg} alt="eyesimg"  /></button>

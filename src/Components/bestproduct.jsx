@@ -25,10 +25,10 @@ export default function Bestproduct() {
 
 
       <div className="card-main2">
-          <Card productimg = {Coat} discount = "-40%" item_name = "HAVIT HV-G92 Gamepad" price = "$960" cutprice = "$160" soldout = "(75)"/>
-          <Card productimg = {beg} discount = "-35%"  item_name = "AK-900 Wired Keyboard" price = "$370" cutprice = "$1160" soldout = "(99)"/>
-          <Card productimg = {bigspeaker} discount = "-35%"  item_name = "IPS LCD Gaming Monitor" price = "$375" cutprice = "$400" soldout = "(99)"/>
-          <Card productimg = {bookshelf} discount = "-25%"  item_name = "S-Series Comfort Chair " price = "$375" cutprice = "$400" soldout = "(88)"/>
+          <Card productimg = {Coat}  item_name = "HAVIT HV-G92 Gamepad" price = "$960" cutprice = "$160" soldout = "(75)"/>
+          <Card productimg = {beg}   item_name = "AK-900 Wired Keyboard" price = "$370" cutprice = "$1160" soldout = "(99)"/>
+          <Card productimg = {bigspeaker}   item_name = "IPS LCD Gaming Monitor" price = "$375" cutprice = "$400" soldout = "(99)"/>
+          <Card productimg = {bookshelf}  item_name = "S-Series Comfort Chair " price = "$375" cutprice = "$400" soldout = "(88)"/>
         </div>
     </div>   
     </>

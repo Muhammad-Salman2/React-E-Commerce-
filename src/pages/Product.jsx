@@ -1,6 +1,6 @@
-import { CiHeart } from "react-icons/ci";
-import eyesimg from "../assets/images/Group.png";
-import star from "../assets/images/star.png";
+// import { CiHeart } from "react-icons/ci";
+// import eyesimg from "../assets/images/Group.png";
+// import star from "../assets/images/star.png";
 
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -28,8 +28,9 @@ export default function Products(Props) {
 
         const searchProduct = ()=>{
           const result = products?.filter((item)=>{
-            return item.title === searchTerm;
+            return item.title.toLowerCase().includes(searchTerm.toLowerCase());
           })
+          return result || []
         }
         // item.title.toLowerCase().includes(searchTerm);
         const searchResult =  searchProduct()
@@ -39,14 +40,14 @@ export default function Products(Props) {
 
 
         <input type="Search"  placeholder="Search item"className="input" onChange={(event)=>{
-          // console.log(event.target.value)
-          setSearchTerm(event.target.value?.toLowerCase())
+          console.log(event.target.value)
+          setSearchTerm(event.target.value)
 
         }}/>
 
         
       <div className="prduduct-flexbox">
-        {products?.map((item) => (
+        {searchResult?.map((item) => (
           <Card key={item.id} productimg={item.thumbnail} item_name = {item.title}  price = {item.price}  />
         ))}
       </div>
