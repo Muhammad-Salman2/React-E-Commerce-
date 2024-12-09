@@ -7,6 +7,7 @@ import Hero from "../Components/Hero.jsx";
 import Newarrival from "../Components/NewArrival.jsx";
 import Survicesicon from "../Components/SurviceIcon.jsx";
 
+
 export default function Home() {
   return (
     <>

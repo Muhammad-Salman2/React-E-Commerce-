@@ -1,6 +1,6 @@
-import qrcode from "../assets/images/qr code2.png"
-import appstore from "../assets/images/appstore.png"
-import playstore from "../assets/images/playstore.png"
+// import qrcode from "../assets/images/qr code2.png"
+// import appstore from "../assets/images/appstore.png"
+import barcode from "../assets/images/bar.png"
 import { RiFacebookLine } from "react-icons/ri";
 import { FiTwitter } from "react-icons/fi";
 import { FaInstagram } from "react-icons/fa";
@@ -42,12 +42,8 @@ export default function Footer(){
                 <div className="page-description5">
                     <p>Download App</p>
                     <li>Save $3 with App New User Only</li>
-                    <div>
-                        <img src={qrcode} alt="qrcode " />
-                        <div>
-                            <img src={appstore} alt="aapstore" className="appstore" />
-                            <img src={playstore} alt="playstore"  className="playstore"  />
-                        </div>
+                    <div className="barcode">
+                       <img src={barcode} alt="barcode" />
                     </div>
                         <div className="contact-icons">
                             <RiFacebookLine />

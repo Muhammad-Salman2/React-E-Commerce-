@@ -10,14 +10,17 @@ import car from "../assets/images/car.png"
 import shoes from "../assets/images/shoes.png"
 import newcont from "../assets/images/newCont.png"
 import jacket from "../assets/images/jacket.png"
+import useProduct from "../hooks/useProduct";
 
 export default function Exploreproduct() {
+  const {products , isLodidng, error} = useProduct("limit=8&skip=110")
+  console.log(products)
   return (
     <>
       <div className="exploreproduct-box ">
         <div className="exploreproduct-Div">
           <div className="exploreproduct-rebbox"></div>
-          <p>Categories</p>
+          <p>Our Products</p>
         </div>
         <div className="exploreproduct-heading">
           <p>Explore Our Products</p>
@@ -33,72 +36,31 @@ export default function Exploreproduct() {
       </div>
 
       <div className="card-main  ">
-        <Card
-          productimg={dog}
-          discount="-40%"
-          item_name="HAVIT HV-G92 Gamepad"
-          price="$960"
-          cutprice="$160"
-          soldout="(75)"
-        />
-        <Card
-          productimg={camera}
-          discount="-35%"
-          item_name="AK-900 Wired Keyboard"
-          price="$370"
-          cutprice="$1160"
-          soldout="(99)"
-        />
-        <Card
-          productimg={laptop}
-          discount="-35%"
-          item_name="IPS LCD Gaming Monitor"
-          price="$375"
-          cutprice="$400"
-          soldout="(99)"
-        />
-        <Card
-          productimg={shampo}
-          discount="-25%"
-          item_name="S-Series Comfort Chair "
-          price="$375"
-          cutprice="$400"
-          soldout="(88)"
-        />
+        {products?.map((item)=>(
 
         <Card
-          productimg={car}
-          discount="-40%"
-          item_name="HAVIT HV-G92 Gamepad"
-          price="$960"
-          cutprice="$160"
-          soldout="(75)"
+        
+          key={item.id}
+          id={item.id}
+          productimg={item.thumbnail}
+          item_name={item.title}
+          rating={item.rating}
+          price={Math.round(item.price)}
+          discount = {Math.round(item.discountPercentage)}
+          oldprice
+
+
+          // discountedRate={`$${(item.price - (item.price * item.discountPercentage) / 100).toFixed(2)}`}
+          
+          
+         
         />
-        <Card
-          productimg={shoes}
-          discount="-35%"
-          item_name="AK-900 Wired Keyboard"
-          price="$370"
-          cutprice="$1160"
-          soldout="(99)"
-        />
-        <Card
-          productimg={newcont}
-          discount="-35%"
-          item_name="IPS LCD Gaming Monitor"
-          price="$375"
-          cutprice="$400"
-          soldout="(99)"
-        />
-        <Card
-          productimg={jacket}
-          discount="-25%"
-          item_name="S-Series Comfort Chair "
-          price="$375"
-          cutprice="$400"
-          soldout="(88)"
-        />
+        ))}
+        
+      
       </div>
+      
     </>
   );
+ 
 }

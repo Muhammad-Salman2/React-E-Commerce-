@@ -5,7 +5,7 @@ import speaker2 from "../assets/images/new.png"
 export default function Enhancemusic() {
   return (
     <>
-      <div className="Enhancemusic-main mx-[92px]">
+      <div className="Enhancemusic-main">
         <div className="flexbox">
           <div className="content">
             <div className="content1"><p>Categories</p></div>
@@ -19,9 +19,9 @@ export default function Enhancemusic() {
 
             <button className="buynow">Buy Now!</button>
           </div>
-             <div className="speaker">
+             {/* <div className="speaker"> */}
                 <img src={speaker2} alt="speaker-Image"  />
-             </div>
+             {/* </div> */}
         </div>
       </div>
     </>

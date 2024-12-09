@@ -7,13 +7,24 @@ import controller from "../assets/images/Controller.png"
 import Keyboard from "../assets/images/Keyboard.png"
 import screen from "../assets/images/screen.png"
 import chear from "../assets/images/chear.png"
+import { Link } from "react-router-dom";
+import useProduct from "../hooks/useProduct";
+
 
 
 
 
 export default function Flashsale() {
+
+    const { products, isLodidng, error } = useProduct("limit=4&skip=94")
+
+
+
     return (
         <>
+            {isLodidng ? "looding" : ""}
+            {error}
+
             <div className="flashsale-box ">
                 <div className="todays-Div">
                     <div className="rebbox"></div>
@@ -33,25 +44,26 @@ export default function Flashsale() {
                             <span><GoArrowRight /></span>
                         </div>
                     </div>
-                    
-                    
+
+
+                </div>
+
+                <div className="card-main1">
+                    {products?.map((item) => (
+                        <Card key={item.id} id={item.id} productimg={item.thumbnail} item_name={item.title} price={Math.round(item.price)} discount={Math.round(item.discountPercentage)} rating={item.rating}/>
+
+                    ))}
                 </div>
 
 
-                <div className="card-main1">
-                    <Card productimg = {controller} discount = "-40%" item_name = "HAVIT HV-G92 Gamepad" price = "$960" cutprice = "$160" soldout = "(75)"/>
-                    <Card productimg = {Keyboard} discount = "-35%"  item_name = "AK-900 Wired Keyboard" price = "$370" cutprice = "$1160" soldout = "(99)"/>
-                    <Card productimg = {screen} discount = "-35%"  item_name = "IPS LCD Gaming Monitor" price = "$375" cutprice = "$400" soldout = "(99)"/>
-                    <Card productimg = {chear} discount = "-25%"  item_name = "S-Series Comfort Chair " price = "$375" cutprice = "$400" soldout = "(88)"/>
-                 </div>
-        <div className="View-all-products">
-          <button>View-all-products</button>
-          
-        </div>
+                <div className="View-all-products">
+                    <button> <Link to={"/product"}>View-all-products</Link></button>
 
-
-
+                </div>
             </div>
+
+
+
         </>
     )
 }

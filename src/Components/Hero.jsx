@@ -10,18 +10,18 @@ import { Link } from "react-router-dom";
 export default function Hero() {
   return (
     <>
-      <div className="li-hero-main mx-[92px]" >
+      <div className="li-hero-main " >
           <div className="hero-list">
             <ul>
-              <li><Link to ={"/home"}>Woman’s Fashion</Link> <FaAngleRight /></li>
-              <li><Link to ={"/home"}>Men’s Fashion</Link> <FaAngleRight /></li>
-              <li><Link to ={"/home"}>Electronics</Link></li>
-              <li><Link to ={"/home"}>Home & Lifestyle</Link></li>
-              <li><Link to ={"/home"}>Medicine</Link></li>
-              <li><Link to ={"/home"}>Sports & Outdoor</Link></li>
-              <li><Link to ={"/home"}>Baby’s & Toys</Link></li>
-              <li><Link to ={"/home"}>Groceries & Pets</Link></li>
-              <li><Link to ={"/home"}>Health & Beauty</Link></li>
+              <li><Link to ={"/home"} className="link">Woman’s Fashion</Link> <FaAngleRight /></li>
+              <li><Link to ={"/home"} className="link">Men’s Fashion</Link> <FaAngleRight /></li>
+              <li><Link to ={"/home"} className="link">Electronics</Link></li>
+              <li><Link to ={"/home"} className="link">Home & Lifestyle</Link></li>
+              <li><Link to ={"/home"} className="link">Medicine</Link></li>
+              <li><Link to ={"/home"} className="link">Sports & Outdoor</Link></li>
+              <li><Link to ={"/home"} className="link">Baby’s & Toys</Link></li>
+              <li><Link to ={"/home"} className="link">Groceries & Pets</Link></li>
+              <li><Link to ={"/home"} className="link">Health & Beauty</Link></li>
             </ul>
           </div>
           <div className="center-line">

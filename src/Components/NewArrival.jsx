@@ -18,7 +18,7 @@ export default function Newarrival() {
       <div className="newarrival-box ">
         <div className="newarrival-Div">
           <div className="newarrival-rebbox"></div>
-          <p>Categories</p>
+          <p>Featured</p>
         </div>
         <div className="newarrival-heading">
           <p>New Arrival</p>
@@ -40,11 +40,12 @@ export default function Newarrival() {
             <div className="girl-img">
               <img src={women}  alt="women" />
             </div>
+
             <div className="third-div">
               <div className="wirless-speaker">
                 <img src={speaker} alt="wirless_speaker" />
               </div>
-              <div>
+              <div className="perfuem">
                 <img src={gucci} alt="perfuem" />
               </div>
             </div>

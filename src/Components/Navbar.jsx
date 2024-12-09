@@ -20,7 +20,7 @@ export default function Navbar() {
               <li><Link to ={"/about"}>About</Link> </li>
               <li><Link to ={"/signup"}>Signup</Link></li>
               <li><Link to ={"/contactus"}>Contact Us</Link></li>
-              <li><Link to ={"/product"}>Product</Link></li>
+              
             </ul>
           </span>
 
