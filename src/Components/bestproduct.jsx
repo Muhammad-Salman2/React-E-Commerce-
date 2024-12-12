@@ -29,7 +29,7 @@ export default function Bestproduct() {
       <div className="card-main2">
         {products?.map((item)=>(
 
-          <Card key={item.id} productimg = {item.thumbnail} rating={item.rating}  item_name = {item.title} price = {Math.round(item.price)} discount = {Math.round(item.discountPercentage)} />
+          <Card id={item.id} key={item.id} productimg = {item.thumbnail} rating={item.rating}  item_name = {item.title} price = {Math.round(item.price)} discount = {Math.round(item.discountPercentage)} />
         ))}
         </div>
     </div>   

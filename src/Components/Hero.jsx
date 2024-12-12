@@ -1,6 +1,6 @@
 import { FaAngleRight } from "react-icons/fa6";
-import iphonelogo from '../assets/apple logo.png';
-import { FaArrowRight } from "react-icons/fa6";
+
+
 
 import discountimage from '../assets/images/fram.png'
 import { Link } from "react-router-dom";
