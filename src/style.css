@@ -58,6 +58,7 @@ body {
   color: white;
   font-size: 15px;
   height: 50px;
+  width: 100;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -435,7 +436,7 @@ select {
 
 .item-description {
   width: 250px;
-  height: 100px;
+  height: 120px;
   /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
@@ -447,10 +448,23 @@ select {
 }
 .first-price {
   color: #db4444;
+  font-weight:500;
+  
+
+
+
+
+
+
+
+
+
+
 }
 
 .secind-price > s {
-  color: #94999d;
+  color:#6b7280;
+  font-weight:500;
 }
 
 .soldout-items > p {
@@ -458,6 +472,7 @@ select {
 }
 .item-price {
   display: flex;
+  height: 20px;
   width: 110px;
   /* border: 1px solid black; */
   justify-content: space-between;
@@ -466,17 +481,21 @@ select {
 
 .icon-div {
   display: flex;
-  width: 10px;
-  border: 1px solid black;
+  width: 140px;
+  height: 20px;
+  /* border: 1px solid black; */
   justify-content: space-between;
   align-items: center;
+  /* justify-content: center; */
+  margin-top: 5px;
   
 }
-/* .react-stars {
-  width: 50px;
-  height: 15px;
-  border: 1px solid black;
-} */
+
+.rating{
+  color:#6b7280;
+  font-size: 14px;
+  font-weight:600;
+}
 
 .discount-Div {
   background-color: #db4444;
@@ -1394,11 +1413,12 @@ select {
 .productdiv{
  /* border: 1px solid black; */
  width: 400px;
- height: 500px;
+ height: 400px;
  background-color: #f5f5f5;
  display: flex;
  align-items: center;
  border-radius: 5px;
+
  
 }
 
@@ -1419,20 +1439,31 @@ select {
   font-weight: 600;
   font-size: 20px;
 }
-.rating{
+.detail-icon-div {
+  display: flex;
+  width: 140px;
+  height: 30px;
   /* border: 1px solid black; */
-  margin-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+  /* justify-content: center; */
+  margin-top: 10px;
+  
+}
+.detail-rating>span{
+  border: 1px solid black;
+  /* margin-bottom: 15px; */
 }
 
 .price{
   /* border: 1px solid black; */
   font-size: 25px;
   font-weight: 500;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .descrition{
   /* border: 1px solid black; */
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .price_set{
@@ -1519,27 +1550,46 @@ select {
 
 
 
+  .signinBtn{
+    background-color:#db4444;
+  }
 
 
-@media only screen and (max-width: 600px){
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 640px){
 
   .home {
     border: 1px solid black;
-    width: 600px;
+    width: 100%;
     
   }
-  
   
   
   .banner {
     background-color: black;
     border: 1px solid white;
-    color: white;
+    /* color: blue; */
     font-size: 15px;
     height: 50px; 
-     width: 600px; 
+    width: 100%; 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
@@ -1556,6 +1606,22 @@ select {
     background-color: black;
     color: white;
     outline: none;
-    display: none;
+    /* display: none; */
   }
 }
+
+
+
+
+/* @media only screen and (max-width: 768px){
+  body{
+    background-color: orange;
+  }
+}
+
+
+@media only screen and (min-width: 1024px){
+ body{
+    background-color: yellow;
+  }
+} */

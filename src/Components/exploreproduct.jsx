@@ -13,7 +13,7 @@ import jacket from "../assets/images/jacket.png"
 import useProduct from "../hooks/useProduct";
 
 export default function Exploreproduct() {
-  const {products , isLodidng, error} = useProduct("limit=8&skip=110")
+  const {products , isLodidng, error} = useProduct("limit=8&skip=60")
   console.log(products)
   return (
     <>
@@ -45,9 +45,14 @@ export default function Exploreproduct() {
           productimg={item.thumbnail}
           item_name={item.title}
           rating={item.rating}
-          price={Math.round(item.price)}
+          oldprice={item.price}
           discount = {Math.round(item.discountPercentage)}
-          oldprice
+          oldRate={`$${item.price}`}
+          discountedRate={`$${(
+                item.price -
+                (item.price * item.discountPercentage) / 100
+              ).toFixed(2)}`}
+         
 
 
           // discountedRate={`$${(item.price - (item.price * item.discountPercentage) / 100).toFixed(2)}`}

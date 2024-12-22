@@ -11,11 +11,15 @@ import About from "./pages/Aboutus.jsx";
 import Products from "./pages/Product.jsx";
 import Footer from "./Components/Footer.jsx";
 import Productdetail from "./pages/productdetail.jsx";
+import AddProduct from "./Components/addProduct.jsx";
 
 
 function App() {
   return (
     <>
+    <div className="testing">
+
+    </div>
       <Banner />
       <Navbar />
 
@@ -26,6 +30,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/product" element={<Products />} />
         <Route path="/Product/:id" element={<Productdetail />} />
+        <Route path="/Product/addproduct" element={<AddProduct />} />
       </Routes>
 
       <Footer/>

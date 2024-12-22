@@ -7,9 +7,20 @@ import { Link } from "react-router-dom";
 
 
 export default function Navbar() {
+
+const darkMode = false;
+
+
+
+
+
+
+
+
+
   return (
     <>
-      <div className="navbar-main">
+      <div className="navbar-main ">
         <div className="navbar">
           <span className="Exclusive">
             <p>Exclusive</p>

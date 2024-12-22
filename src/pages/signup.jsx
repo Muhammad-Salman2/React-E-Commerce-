@@ -30,7 +30,7 @@ export default function Example() {
                     type="email"
                     required
                     autoComplete="email"
-                    className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                    className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-red-600 sm:text-sm/6"
                     onChange={formSubmited}
                   />
                 </div>
@@ -47,7 +47,7 @@ export default function Example() {
                   <div className="text-sm">
                     <a
                      
-                      className="font-semibold text-indigo-600 hover:text-indigo-500"
+                      className="font-semibold text-red-600 hover:text-red-500"
                     >
                       Forgot password?
                     </a>
@@ -60,7 +60,7 @@ export default function Example() {
                     type="password"
                     required
                     autoComplete="current-password"
-                    className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                    className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-red-600 sm:text-sm/6"
                     onChange={formSubmited}
                   />
 
@@ -68,7 +68,7 @@ export default function Example() {
               </div>
 
               <div>
-                <button className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                <button className="signinBtn flex w-full justify-center rounded-md  px-3 py-1.5 text-sm/6 font-semibold text-white shadow-sm hover:bg-red-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">
                   Sign in
                 </button>
               </div>
@@ -78,7 +78,7 @@ export default function Example() {
               Not a member?{" "}
               <a
                 href="#"
-                className="font-semibold text-indigo-600 hover:text-indigo-500"
+                className="font-semibold text-red-600 hover:text-red-500"
               >
                 Start a 14 day free trial
               </a>
