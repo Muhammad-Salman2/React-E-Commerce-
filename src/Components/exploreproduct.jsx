@@ -33,37 +33,39 @@ export default function Exploreproduct() {
             </span>
           </div>
         </div>
+
+
+          <div className="card-main  ">
+            {products?.map((item)=>(
+
+            <Card
+            
+              key={item.id}
+              id={item.id}
+              productimg={item.thumbnail}
+              item_name={item.title}
+              rating={item.rating}
+              oldprice={item.price}
+              discount = {Math.round(item.discountPercentage)}
+              oldRate={`$${item.price}`}
+              discountedRate={`$${(
+                    item.price -
+                    (item.price * item.discountPercentage) / 100
+                  ).toFixed(2)}`}
+            
+
+
+              // discountedRate={`$${(item.price - (item.price * item.discountPercentage) / 100).toFixed(2)}`}
+              
+              
+            
+            />
+            ))}
+            
+          
+          </div>
       </div>
 
-      <div className="card-main  ">
-        {products?.map((item)=>(
-
-        <Card
-        
-          key={item.id}
-          id={item.id}
-          productimg={item.thumbnail}
-          item_name={item.title}
-          rating={item.rating}
-          oldprice={item.price}
-          discount = {Math.round(item.discountPercentage)}
-          oldRate={`$${item.price}`}
-          discountedRate={`$${(
-                item.price -
-                (item.price * item.discountPercentage) / 100
-              ).toFixed(2)}`}
-         
-
-
-          // discountedRate={`$${(item.price - (item.price * item.discountPercentage) / 100).toFixed(2)}`}
-          
-          
-         
-        />
-        ))}
-        
-      
-      </div>
       
     </>
   );

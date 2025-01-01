@@ -17,9 +17,9 @@ import AddProduct from "./Components/addProduct.jsx";
 function App() {
   return (
     <>
-    <div className="testing">
-
-    </div>
+    {/* <div className="testing bg-black sm:bg-red-600  md:bg-green-500  lg:bg-blue-500  xl:bg-yellow-400 " >
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, ex molestiae veniam illum velit saepe ad? Dolorem enim, soluta impedit sequi aliquid, deleniti, quae illo omnis quasi exercitationem quo! Beatae.
+    </div> */}
       <Banner />
       <Navbar />
 

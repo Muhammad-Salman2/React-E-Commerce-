@@ -10,7 +10,7 @@ export default function Bestproduct() {
   const { products, isLodidng, error } = useProduct("limit=4&skip=43");
   return (
     <>
-      <div className=" mt-3">
+      {/* <div className=" mt-3"> */}
         <div className="bestproduct-box ">
           <div className="bestproduct-Div">
             <div className="bestproduct-rebbox"></div>
@@ -22,27 +22,28 @@ export default function Bestproduct() {
               <button>View All</button>
             </div>
           </div>
+          
+            <div className="card-main2">
+              {products?.map((item) => (
+                <Card
+                  id={item.id}
+                  key={item.id}
+                  productimg={item.thumbnail}
+                  rating={item.rating}
+                  item_name={item.title}
+                  oldprice={item.price}
+                  discount={Math.round(item.discountPercentage)}
+                  oldRate={`$${item.price}`}
+                  discountedRate={`$${(
+                    item.price -
+                    (item.price * item.discountPercentage) / 100
+                  ).toFixed(2)}`}
+                />
+              ))}
+            </div>
         </div>
 
-        <div className="card-main2">
-          {products?.map((item) => (
-            <Card
-              id={item.id}
-              key={item.id}
-              productimg={item.thumbnail}
-              rating={item.rating}
-              item_name={item.title}
-              oldprice={item.price}
-              discount={Math.round(item.discountPercentage)}
-              oldRate={`$${item.price}`}
-              discountedRate={`$${(
-                item.price -
-                (item.price * item.discountPercentage) / 100
-              ).toFixed(2)}`}
-            />
-          ))}
-        </div>
-      </div>
+      {/* </div> */}
     </>
   );
 }

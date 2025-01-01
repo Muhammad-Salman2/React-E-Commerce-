@@ -18,7 +18,7 @@ export default function Flashsale() {
       {isLodidng ? "looding" : ""}
       {error}
 
-      <div className="flashsale-box ">
+      <div className="flashsale-box  ">
         <div className="todays-Div">
           <div className="rebbox"></div>
           <p>Today's</p>
