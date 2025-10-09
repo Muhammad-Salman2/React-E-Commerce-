@@ -45,9 +45,9 @@ export default function Navbar() {
           </div>
           <MdLightMode className="text-[20px]  " />
           <div className="sm:flex items-center justify-evenly w-44 md:w-52">
-            <FaRegHeart className="sm:text-[20px] cursor-pointer " onClick={Wishlist}/>
-            <IoCartOutline className="sm:text-[25px] hidden md:flex cursor-pointer" onClick={Addtocart}/>
-            <RiAccountCircleLine className="sm:text-[25px] cursor-pointer" onClick={Profile}/>
+            <FaRegHeart className="sm:text-[20px] cursor-pointer "/>
+            <IoCartOutline className="sm:text-[25px] hidden md:flex cursor-pointer" />
+            <RiAccountCircleLine className="sm:text-[25px] cursor-pointer" />
           </div>
           <IoMenu className="sm:text-[25px] lg:hidden" />
         </div>
