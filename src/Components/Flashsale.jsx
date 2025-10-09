@@ -60,7 +60,7 @@ export default function Flashsale() {
 
         <div className="card-main1">
           {products?.map((item) => (
-            <Card
+            <Card              
               key={item.id}
               id={item.id}
               productimg={item.thumbnail}
@@ -73,6 +73,8 @@ export default function Flashsale() {
                 item.price -
                 (item.price * item.discountPercentage) / 100
               ).toFixed(2)}`}
+              
+              
             />
           ))}
         </div>

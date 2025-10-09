@@ -23,8 +23,8 @@ export default function Catogary() {
                 <div className="catogary-heading">
                     <p>Browse By Category</p>
                     <div className="catogary-arrows">
-                                <span><GoArrowLeft /></span>
-                                <span><GoArrowRight /></span>
+                        <span><GoArrowLeft /></span>
+                        <span><GoArrowRight /></span>
                     </div>
                 </div>
 
@@ -32,36 +32,36 @@ export default function Catogary() {
 
 
                 <div className="Catogarycard">
-            <div>
-                <IoPhonePortraitOutline className="icons" /> 
-                <p>Phone</p>
-            </div>
+                    <div>
+                        <IoPhonePortraitOutline className="icons" />
+                        <p>Phone</p>
+                    </div>
 
-            <div>
-                <HiOutlineComputerDesktop className="icons"/>
-                <p>Computer</p>
-            </div>
+                    <div>
+                        <HiOutlineComputerDesktop className="icons" />
+                        <p>Computer</p>
+                    </div>
 
-            <div>
-                <BsSmartwatch className="icons"/>
-                <p>SmartWatch</p>
-            </div>
+                    <div>
+                        <BsSmartwatch className="icons" />
+                        <p>SmartWatch</p>
+                    </div>
 
-            <div>
-                <IoCameraOutline className="icons"/>
-                <p>Camera</p>
-            </div>
+                    <div>
+                        <IoCameraOutline className="icons" />
+                        <p>Camera</p>
+                    </div>
 
-            <div>
-                <PiHeadphones className="icons"/>
-                <p>HeadPhone</p>
-            </div>
-        
-            <div>
-                <LuGamepad className="icons"/>
-                <p>Gaming</p>
-            </div>
-        </div>
+                    <div>
+                        <PiHeadphones className="icons" />
+                        <p>HeadPhone</p>
+                    </div>
+
+                    <div>
+                        <LuGamepad className="icons" />
+                        <p>Gaming</p>
+                    </div>
+                </div>
             </div>
         </>
 

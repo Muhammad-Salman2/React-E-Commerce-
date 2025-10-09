@@ -77,7 +77,7 @@ export default function Hero() {
     {/* for large screen screen */}
     <div className="hidden lg:flex  justify-between mx-[60px] h-fit" >
         <div className="lg:flex border-r border-gray-400 w-56  ">
-              <ul className="lg:flex flex-col  justify-between mt-9">
+              <ul className="lg:flex flex-col justify-between mt-9 ">
                 <li className=""><Link to ={"/home"} className="link">Men’s Fashion</Link></li>
                 <li className=""><Link to ={"/home"} className="link">Electronics</Link></li>
                 <li className=""><Link to ={"/home"} className="link">Home & Lifestyle</Link></li>

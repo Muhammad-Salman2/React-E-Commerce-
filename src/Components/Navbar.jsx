@@ -13,67 +13,52 @@ import { MdLightMode } from "react-icons/md";
 
 export default function Navbar() {
 
-// const darkMode = false;
-// const [ishamBurgerOpen, setIshamBurgerOpen] = useState(true)
+  // const darkMode = false;
+  // const [ishamBurgerOpen, setIshamBurgerOpen] = useState(true)
 
 
   return (
     <>
-    {/* for dekstop */}
-    <div className="nav  hidden sm:flex w-full h-24 border-bottom border-gray  items-center md:">
+      {/* for dekstop */}
+      <div className="nav  hidden sm:flex w-full h-24 border-bottom border-gray  items-center md:">
         <div className="sm:w-full h-12 flex items-center justify-around">
-         
+
           <img src={shoplogo} className="sm:w-32" />
 
           <span className="sm:hidden lg:flex items-center w-96 h-11">
             <ul className="flex justify-between w-full">
-              <li><Link to ={"/"}>Home</Link></li>
-              <li><Link to ={"/about"}>About</Link> </li>
-              <li><Link to ={"/signup"}>Signup</Link></li>
-              <li><Link to ={"/contactus"}>Contact Us</Link></li>
-              
+              <li><Link to={"/"}>Home</Link></li>
+              <li><Link to={"/about"}>About</Link> </li>
+              <li><Link to={"/signup"}>Signup</Link></li>
+              <li><Link to={"/contactus"}>Contact Us</Link></li>
             </ul>
           </span>
 
-            <div className="search-or-icon">
-              <div className="search">
-                <input type="search" placeholder="What are you looking for?" />
-                <IoIosSearch className="search-icon" />
-              </div>
-          
-              {/* <MdLightMode className="sm:text-[25px]"/> */}
-            
-        
+          <div className="search-or-icon">
+            <div className="search">
+              <input type="search" placeholder="What are you looking for?" />
+              <IoIosSearch className="search-icon" />
             </div>
-            <MdLightMode className="text-[20px]  "/>
-            <div className="sm:flex items-center justify-evenly w-44 md:w-52">
-              <FaRegHeart className="sm:text-[20px] " />
-              <IoCartOutline className="sm:text-[25px] hidden md:flex" />
-              <RiAccountCircleLine className="sm:text-[25px] " />
-              </div>
-              <IoMenu className="sm:text-[25px] lg:hidden"/>
+
+            {/* <MdLightMode className="sm:text-[25px]"/> */}
+
+          </div>
+          <MdLightMode className="text-[20px]  " />
+          <div className="sm:flex items-center justify-evenly w-44 md:w-52">
+            <FaRegHeart className="sm:text-[20px] cursor-pointer " onClick={Wishlist}/>
+            <IoCartOutline className="sm:text-[25px] hidden md:flex cursor-pointer" onClick={Addtocart}/>
+            <RiAccountCircleLine className="sm:text-[25px] cursor-pointer" onClick={Profile}/>
+          </div>
+          <IoMenu className="sm:text-[25px] lg:hidden" />
         </div>
-    </div>
-        
-
-
+      </div>
 
 
       {/* for mobile */}
-       <div className=" w-full h-24 border border-black flex items-center sm:hidden">
+      <div className=" w-full h-24 border border-black flex items-center sm:hidden">
         <div className="w-full h-12 flex items-center justify-around">
-         
-          <img src={shoplogo} className="w-32" />
 
-          {/* <span className="Home">
-            <ul>
-              <li><Link to ={"/"}>Home</Link></li>
-              <li><Link to ={"/about"}>About</Link> </li>
-              <li><Link to ={"/signup"}>Signup</Link></li>
-              <li><Link to ={"/contactus"}>Contact Us</Link></li>
-              
-            </ul>
-          </span> */}
+          <img src={shoplogo} className="w-32" />
 
           <div className="search-or-icon">
             <div className="search">
@@ -82,17 +67,17 @@ export default function Navbar() {
             </div>
 
           </div>
-         
-            <MdLightMode className="text-[25px]"/>
-            
-        
-              <RiAccountCircleLine className="text-[25px]" />
-              <IoMenu className="text-[28px]"/>
+
+          <MdLightMode className="text-[25px]" />
+
+
+          <RiAccountCircleLine className="text-[25px]" />
+          <IoMenu className="text-[28px]" />
         </div>
       </div>
-              {/* <FaRegHeart className="heart" />
+      {/* <FaRegHeart className="heart" />
               <IoCartOutline className="cart" /> */}
     </>
-    
+
   );
 }

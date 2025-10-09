@@ -9,7 +9,7 @@ import not_found from "../assets/images/not-found.webp"
 import useProduct from "../hooks/useProduct";
 
 export default function Products(Props) {
-  const {products , isLodidng, error} = useProduct("limit=150&skip=78")
+  const { products, isLodidng, error } = useProduct("limit=150&skip=78")
 
   const [searchTerm, setSearchTerm] = useState("");
   console.log(searchTerm);
@@ -27,7 +27,7 @@ export default function Products(Props) {
       {products === null ? "Loding... Please wait " : null}
 
       <div className="product-main">
-        <input
+        {/* <input
           type="Search"
           placeholder="Search item"
           className="input"
@@ -35,26 +35,52 @@ export default function Products(Props) {
             console.log(event.target.value);
             setSearchTerm(event.target.value);
           }}
-        />
+        /> */}
+
+        <form
+          className="max-w-md mr-[265px]">
+          <div className="relative">
+            <svg xmlns="http://www.w3.org/2000/svg" className="absolute top-0 bottom-0 w-6 h-6 my-auto text-gray-400 left-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            <input
+              type="Search"
+              placeholder="Search"
+              onChange={(event) => {
+                console.log(event.target.value);
+                setSearchTerm(event.target.value);
+              }}
+              className="w-[800px] py-3 pl-12 pr-4 text-gray-500 border rounded-md outline-none bg-gray-50 focus:bg-white focus:border-indigo-600"
+            />
+          </div>
+        </form>
+
         <div className="prduduct-flexbox">
-          {searchResult.length === 0 ? <img src={ not_found} alt="product not found"  /> : ""}
+          {searchResult.length === 0 ? <img src={not_found} alt="product not found" /> : ""}
           {searchResult?.map((item) => (
             <Card
               key={item.id}
               id={item.id}
               productimg={item.thumbnail}
               item_name={item.title}
-              price={item.price}
-              discount = {item.discountPercentage}
-              // discountprice ={`$${(item.price - (item.price * item.discountPercentage) / 100).toFixed(2)}`}
-              
-              />
-                
+              oldprice={item.price}
+              discount={Math.round(item.discountPercentage)}
+              rating={item.rating}
+              discountedRate={`$${(
+                item.price -
+                (item.price * item.discountPercentage) / 100
+              ).toFixed(2)}`}
+            // discountprice ={`$${(item.price - (item.price * item.discountPercentage) / 100).toFixed(2)}`}
+
+            />
+
+
+
           ))}
         </div>
       </div>
     </>
-    
+
   );
 }
 
