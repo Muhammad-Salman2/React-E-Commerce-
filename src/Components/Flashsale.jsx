@@ -3,10 +3,7 @@ import { GoArrowLeft } from "react-icons/go";
 
 import Card from "./Cards";
 
-import controller from "../assets/images/Controller.png";
-import Keyboard from "../assets/images/Keyboard.png";
-import screen from "../assets/images/screen.png";
-import chear from "../assets/images/chear.png";
+
 import { Link } from "react-router-dom";
 import useProduct from "../hooks/useProduct";
 
@@ -60,7 +57,7 @@ export default function Flashsale() {
 
         <div className="card-main1">
           {products?.map((item) => (
-            <Card              
+            <Card
               key={item.id}
               id={item.id}
               productimg={item.thumbnail}
@@ -73,8 +70,8 @@ export default function Flashsale() {
                 item.price -
                 (item.price * item.discountPercentage) / 100
               ).toFixed(2)}`}
-              
-              
+
+
             />
           ))}
         </div>
